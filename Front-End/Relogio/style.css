@@ -1,0 +1,24 @@
+body {
+    background-image:url("https://img.freepik.com/vetores-gratis/papel-de-parede-marrom-com-design-de-relogio-retro_1308-18196.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+h1 {
+margin-bottom: 20px;
+}
+.clock {
+    font-size: 3em;
+    text-align: center;
+    color: #333;
+}
+.footer{
+    margin-bottom: 10px;
+}

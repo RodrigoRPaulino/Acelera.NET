@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!--Titulo da aba-->
+    <title>Exercicio CSS - Formulário</title>
+    <!--Referencia do CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+   <div>
+    <h1 id ="title">Acelera Pleno 2023</h1><br>
+    <h2 id ="subtitle"><strong>Cadastro de Alunos</strong></h2>
+   </div>
+    
+<!-- Formulário -->
+<form id="form">
+  <fieldset class="grupo">
+      <div class="campo">
+          <label for="nome"><strong>Nome Completo<span class="text-danger"> *</span></strong></label>
+          <input type="text" name="nome" id="nome" pattern="[A-Za-z]+" title="Somente letras" required>
+      </div>
+      <div class="campo">
+          <label for="endereco"><strong>Endereço <span class="text-danger"> *</span></strong></label>
+          <input type="text" name="endereco" id="endereco" pattern="[A-Za-z]+" title="Somente letras" required>
+      </div>
+      <div class="campo">
+          <label for="telefone"><strong>Telefone <span class="text-danger"> *</span></strong></label>
+          <input type="text" name="telefone" id="telefone" pattern="[A-Za-z0-9]+" title="Somente números" required>
+      </div>
+      <div class="campo">
+          <label for="login"><strong>Login<span class="text-danger"> *</span></strong></label>
+          <input type="text" name="login" id="login" readonly>
+      </div>
+      <div class="campo">
+          <label for="senha"><strong>Senha<span class="text-danger"> *</span></strong></label>
+          <input type="password" name="senha" id="senha">
+      </div>
+      <div class="campo">
+          <label for="confirmarSenha"><strong>Confirmar Senha<span class="text-danger"> *</span></strong></label>
+          <input type="password" name="confirmarSenha" id="confirmarSenha">
+      </div>
+    </div>
+    
+    <input type="submit" class="button" value="Enviar">
+
+  </fieldset>
+</form>
+  </body>
+</html>

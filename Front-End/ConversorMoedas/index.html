@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 Java Script</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="form-container">
+            <label for="amount">Valor em R$(BRL)</label>
+            <input type="number" class="form-control" id="amountInput" placeholder="Quantia">
+
+            <section>
+                <span>Valor em USD: <span id="usdValue"></span></span>
+                <span>Valor em EUR: <span id="eurValue"></span></span>
+                <span>Valor em BTC: <span id="btcValue"></span></span>
+            </section>
+
+            <select class="form-control" id="Coins">
+                <option selected disabled value="">Selecione a Moeda Desejada</option>
+                <option>Dolar</option>
+                <option>Euro</option>
+                <option>BitCoin</option>
+            </select>
+
+            <button type="button" class="btn btn-success" onclick="ConvertValue()">Converter Valor</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfoInputs.cache
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfo.cs
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Users\Escritório\source\repos\Livraria\Livraria\bin\Debug\net6.0\Livraria.deps.json
+C:\Users\Escritório\source\repos\Livraria\Livraria\bin\Debug\net6.0\Livraria.dll
+C:\Users\Escritório\source\repos\Livraria\Livraria\bin\Debug\net6.0\Livraria.pdb
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.dll
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\refint\Livraria.dll
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.pdb
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\ref\Livraria.dll
+C:\Users\Escritório\source\repos\Livraria\Livraria\obj\Debug\net6.0\Livraria.csproj.AssemblyReference.cache
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.deps.json
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.dll
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.pdb
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.AssemblyReference.cache
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfoInputs.cache
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfo.cs
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.dll
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\refint\Livraria.dll
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.pdb
+C:\Users\rodri\OneDrive\Área de Trabalho\ProjetoLivraria\Livraria\obj\Debug\net6.0\ref\Livraria.dll
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.deps.json
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.dll
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.pdb
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.AssemblyReference.cache
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfoInputs.cache
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfo.cs
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.dll
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\refint\Livraria.dll
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.pdb
+C:\Users\a879956\source\repos\Acelera.Net\Projeto Livraria\ProjetoLivraria\Livraria\obj\Debug\net6.0\ref\Livraria.dll
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.deps.json
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.dll
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\bin\Debug\net6.0\Livraria.pdb
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.AssemblyReference.cache
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfoInputs.cache
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfo.cs
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.sourcelink.json
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.dll
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\refint\Livraria.dll
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\Livraria.pdb
+C:\Users\rodri\source\repos\Acelera.Net\ProfFlavio\ProjetoLivraria\Livraria\obj\Debug\net6.0\ref\Livraria.dll

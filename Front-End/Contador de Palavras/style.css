@@ -1,0 +1,26 @@
+body {
+    background-color: #F0EDED;
+  }
+  .contador {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 5px #ccc;
+    border-radius: 5px;
+  }
+  
+  .contador div {
+    padding: 5px;
+  }
+  
+  button {
+    border: 1px solid #0cc;
+    background-color: rgb(94, 26, 94);
+    color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }

@@ -1,0 +1,14 @@
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\bin\Debug\net6.0\Aula01.NET.exe
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\bin\Debug\net6.0\Aula01.NET.deps.json
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\bin\Debug\net6.0\Aula01.NET.runtimeconfig.json
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\bin\Debug\net6.0\Aula01.NET.dll
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\bin\Debug\net6.0\Aula01.NET.pdb
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.AssemblyInfoInputs.cache
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.AssemblyInfo.cs
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.csproj.CoreCompileInputs.cache
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.dll
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\refint\Aula01.NET.dll
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.pdb
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\Aula01.NET.genruntimeconfig.cache
+C:\Users\rodri\source\repos\Exercicios\Aula01.NET\Aula01.NET\obj\Debug\net6.0\ref\Aula01.NET.dll

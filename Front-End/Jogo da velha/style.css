@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-image:linear-gradient(45deg,rgb(0, 255, 21),black);
+    height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+}
+.board{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /*traz as celulas para o centro*/
+    justify-content: center;
+    align-content: center;
+    /*alinha os itens da celula no centro*/
+    justify-items: center;
+    align-items: center;
+    /*define quantas colunas serao replicadas*/
+    grid-template-columns: repeat(3, auto);
+}
+
+
+
+/*subescreve o hover com transparencia usando o important*/
+.board.X .cell:not(.X):not(.O):hover::after,
+.board.X .cell:not(.X):not(.O):hover::before,
+.board.O .cell:not(.X):not(.O):hover::after,
+.board.O .cell:not(.X):not(.O):hover::before{
+    background: rgba(0,0,0, 0.5) !important;
+}
+
+/*cria as celulas para o jogo */
+.cell
+{
+ width: 100px;
+ height: 100px;
+ border: 2px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    /*adicionando o relative para formar o X */
+    position: relative;
+}
+
+/*implementando um cursor que indica que essa celula ja foi selecionada
+nao permitindo o clique do mouse*/
+.cell.X,.cell.O{
+    cursor: not-allowed;
+}
+/*tirar as bordas externas das celulas usando o conceito de classe filho
+passando como input qual filho sera modificado*/
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none; 
+}
+
+/*remove as bordas laterais esquerdas*/
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7){
+    border-left: none;   
+}
+
+/*remove as bordas laterais direitas*/
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9){
+    border-right: none; 
+}
+
+/*remove as bordas inferiores*/
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: none;  
+}
+
+/*criando o x*/
+.cell.X::before,
+.cell.X::after,
+/*quando a jogada for o X, iremos criar o hover vai exibir o x quando
+passarmos o mouse na celula. usamos o not para nao aplicar o hover 
+em celulas ocupadas*/
+.board.X .cell:not(.X):not(.O):hover::after,
+.board.X .cell:not(.X):not(.O):hover::before{
+content: "";
+/*usando o calc, podemos criar uma expressao para definir o tamanho*/
+height: calc(100px * 0.15);
+width: calc(100px * 0.9);
+background-color: black;
+position: absolute;
+}
+/*rotacionando o x */
+.cell.X::before,
+.board.X .cell:not(.X):not(.O):hover::before{
+    transform: rotate(45deg);
+}
+.cell.X::after,
+.board.X .cell:not(.X):not(.O):hover::after{
+    transform: rotate(-45deg);
+}
+
+/*criando o O*/
+.cell.O::before,
+.cell.O::after,
+.board.O .cell:not(.X):not(.O):hover::after,
+.board.O .cell:not(.X):not(.O):hover::before{
+content: "";
+/*usando o calc, podemos criar uma expressao para definir o tamanho*/
+height: calc(100px * 0.9);
+width: calc(100px * 0.9);
+background-color: black;
+position: absolute;
+border-radius: 50%;
+}
+
+/*mensagem de vitória*/
+.winning-message{
+    display: none;
+    /* usamos para uma div pegar toda a altura largura do documento
+    fugindo do fluxo da pagina*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.8);
+    /*usamos para os itens ficarem como uma coluna*/
+    flex-direction: column;
+}
+
+.show-winning-message
+{
+    display: flex;
+}
+.btn{
+    font-size: 2.5rem;
+    background-color:  rgb(71, 255, 154);
+    padding: 10px,15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: rgb(17, 17, 17);
+}
+.btn:hover{
+    color: rgb(71, 255, 154);
+    background-color: black;
+}
+.textwin{
+    color: azure;
+    font-size: 5rem;
+}

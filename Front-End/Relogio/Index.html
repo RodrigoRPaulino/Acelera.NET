@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relógio Digital</title>
+</head>
+<body>
+<div class="container">
+    <h1>Relógio Digital</h1>
+
+    <div class="clock">
+        <div id="time"></div>
+    </div>
+    <br>
+    <section>
+        <button onclick="startClock()" type="button" class="btn btn-secondary">Iniciar</button>
+        <button type="button" class="btn btn-dark" id="iniciar">Zerar</button>
+        <button onclick="clearInterval(intervalReference)" type="button" class="btn btn-danger" id="desligar">Parar</button>
+    </section>
+    <br>
+    <div class="footer">
+        <p>Acelera Pleno 2023</p>
+    </div>
+    </button>
+</div>
+    <script src="relogio.js"></script>
+</body>
+</html>
