@@ -60,7 +60,7 @@ namespace Livraria
         public static Usuario FromCsv(string csvLine)
         {
             string[] campos = csvLine.Split(',');
-            Usuario usu = new Usuario(campos[0], campos[1], campos[2], campos[3]);
+            Usuario usu = new Usuario(campos[0],campos[1], campos[2], campos[3]);
             return usu;
         }
 

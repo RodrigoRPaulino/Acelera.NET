@@ -110,7 +110,7 @@ namespace ControlLivraria
                 Livros livro = new Livros(txb_Livro.Text, paginas, codigo, valor);
                 Livros.CadastraLivro(livro);
 
-                MessageBox.Show("Livro cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Livro(S) cadastrado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Atualiza a lista de livros após o cadastro bem-sucedido
                 AtualizarListaDeLivros();
@@ -148,6 +148,7 @@ namespace ControlLivraria
 
                 Livros.SalvaLocalJSON(nomeArquivo);
             }
+            MessageBox.Show("Usuário(S) exportado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -170,12 +171,12 @@ namespace ControlLivraria
                     switch (tipoDado)
                     {
                         case TipoCadastro.Usuario:
-                            writer.WriteLine("Nome,Login,Senha");
+                            writer.WriteLine("Id Livro,Nome,Login,Senha");
                             foreach (var usuario in LUsuarios.GetUsuarios())
                             {
-                                writer.WriteLine($"{usuario.Nome},{usuario.Login},{usuario.Senha}");
+                                writer.WriteLine($"{usuario.Id},{usuario.Nome},{usuario.Login},{usuario.Senha}");
                             }
-                            MessageBox.Show("Usuário exportado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Usuário(S) exportado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
 
                         case TipoCadastro.Livro:
@@ -184,7 +185,7 @@ namespace ControlLivraria
                             {
                                 writer.WriteLine($"{livro.Livro},{livro.Paginas},{livro.Codigo},{livro.Valor}");
                             }
-                            MessageBox.Show("Livro exportado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Livro(S) exportado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
 
 

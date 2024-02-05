@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Rg1scXP5qF6YBP1Gpix5t+/tsWFEsbVy2KgCXgWtZ8iXZDuQD2JpIOz6PZ8f1iv55mTVHIt5UJw2FTMS59F1Q==",
+  "dgSpecHash": "xPZKQ+iUVO2+gOxrk5B5QMg76yiyY0bqYkoC3ZpZwMwxgzmu9MpweQWepl7Cupn/1vOfnqMRb5tJNmOQw6Ah6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj",
+  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rodri\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
   ],

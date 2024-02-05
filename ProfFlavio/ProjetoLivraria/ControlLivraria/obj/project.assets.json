@@ -87,11 +87,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\ControlLivraria.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\ControlLivraria.csproj",
       "projectName": "ControlLivraria",
-      "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\ControlLivraria.csproj",
+      "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\ControlLivraria.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\obj\\",
+      "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj": {
-              "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj"
+            "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj": {
+              "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj"
             }
           }
         }
