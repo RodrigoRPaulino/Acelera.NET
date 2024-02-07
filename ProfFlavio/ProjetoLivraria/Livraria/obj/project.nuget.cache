@@ -1,21 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "xPZKQ+iUVO2+gOxrk5B5QMg76yiyY0bqYkoC3ZpZwMwxgzmu9MpweQWepl7Cupn/1vOfnqMRb5tJNmOQw6Ah6A==",
+  "dgSpecHash": "YTIxETdykl+7jAQdgMTsTnIbtX2HwavWkLWxmFIGStllEo5joXUeRN+vGUz54sGcqJOvJzHr+nd6Ox8zpVqM1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj",
+  "projectFilePath": "C:\\Users\\a879956\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\Livraria\\Livraria.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rodri\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
+    "C:\\Users\\a879956\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
   ],
   "logs": [
     {
-      "code": "NU1903",
+      "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Newtonsoft.Json' 12.0.1 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://10.129.178.173:8082/repository/rpa-componentes-nuget/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

@@ -1,0 +1,9 @@
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.csproj.AssemblyReference.cache
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.AssemblyInfo.cs
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.RazorAssemblyInfo.cache
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.RazorAssemblyInfo.cs
+C:\Users\a880130\Desktop\Nova pasta (5)\AceleraPleno\WebApplication2\obj\Debug\net6.0\WebApplication2.sourcelink.json
