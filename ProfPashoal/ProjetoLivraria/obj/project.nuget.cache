@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LmHie6fUSbANrjyFeutipmJ76XSiC2g/QWH5zTEv0nI/KDdRlHPtvRKq4sxwtpQYrICcDbpRcgW4KTQc7Ip9uQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\ProfFlavio\\ProjetoLivraria\\ControlLivraria\\ControlLivraria.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rodri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
