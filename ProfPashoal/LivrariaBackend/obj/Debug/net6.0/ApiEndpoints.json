@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "LivrariaBackend.Controllers.LivrosController",
+    "Method": "GetLivros",
+    "RelativePath": "api/Livros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LivrariaBackend.Controllers.UsuarioController",
     "Method": "GetUsuario",
     "RelativePath": "api/Usuario",

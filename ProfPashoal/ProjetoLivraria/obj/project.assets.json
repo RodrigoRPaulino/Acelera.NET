@@ -1956,11 +1956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
       "projectName": "ControlLivraria",
-      "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
+      "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\obj\\",
+      "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",

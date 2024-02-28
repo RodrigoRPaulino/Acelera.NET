@@ -14,7 +14,7 @@ namespace LivrariaBackend.Models
         [Column]
         public string Senha { get; set; }
 
-        public UsuarioModel(string nome, string login, string senha) 
+        public UsuarioModel(string nome, string login, string senha)
         {
             this.Nome = nome;
             this.Login = login;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EWBYsVFeD/yjdPYkNjrA+u/wnvNS11jyK44DE6s72weoldhl4OH2VgdDxdmXdpNeEogYjuPMpCXfsVpq82xEmw==",
+  "dgSpecHash": "yYp0zmcC471VV+TflbGv4WVhPDKDpyNTNGwfUtB+ad5Kw0YuRrwrGe7JslBJY+zAlrLZ1fjULYjZWLfYsSnpow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
+  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\ControlLivraria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

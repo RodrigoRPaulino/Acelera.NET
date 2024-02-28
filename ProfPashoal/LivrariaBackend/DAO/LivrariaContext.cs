@@ -6,7 +6,9 @@ namespace LivrariaBackend.DAO
 {
     public class LivrariaContext: DbContext
     {
+        
         public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<LivrosModel> Livros { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -15,6 +17,11 @@ namespace LivrariaBackend.DAO
                 optionsBuilder.UseMySql(connect, ServerVersion.AutoDetect(connect));
 
                 optionsBuilder.LogTo(Console.WriteLine);
+
+                //string connect = "server=zapcidade.app;port=3306;database=livraria;uid=livraria;password=aceleranet";
+                //optionsBuilder.UseMySql(connect, ServerVersion.AutoDetect(connect));
+
+                //optionsBuilder.LogTo(Console.WriteLine);
             }
         }
         
