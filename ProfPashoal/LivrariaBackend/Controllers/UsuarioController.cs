@@ -1,20 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LivrariaBackend.DAO;
+using LivrariaBackend.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LivrariaBackend.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuarioController: ControllerBase
     {
-        [HttpGet]
-        public JsonResult GetJsonResult()
+        private LivrariaContext _context;
+        public UsuarioController(LivrariaContext context)
         {
-            List<string> usuarios = new List<string>();
-            usuarios.Add("Popó");
-            usuarios.Add("Bambam");
-
-            return new JsonResult(usuarios);
+            _context = new LivrariaContext();
         }
+        [HttpGet]
+        public JsonResult GetUsuario() 
+        {
+            var usuarioDB = _context.Usuarios.ToList();
+            return new JsonResult(usuarioDB);
+        }
+
     }
 }
