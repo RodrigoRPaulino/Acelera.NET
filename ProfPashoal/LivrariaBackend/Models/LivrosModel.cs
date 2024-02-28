@@ -11,12 +11,12 @@ namespace LivrariaBackend.Models
         [Column]
         public string Livro { get; set; }
         [Column]
-        public int PG { get; set; }
+        public string PG { get; set; }
         [Column]
         public decimal Valor { get; set; }
 
         public LivrosModel() { }
-        public LivrosModel(int cod, string livro, int pg, decimal valor)
+        public LivrosModel(int cod, string livro, string pg, decimal valor)
         {
             this.COD = cod;
             this.Livro = livro;

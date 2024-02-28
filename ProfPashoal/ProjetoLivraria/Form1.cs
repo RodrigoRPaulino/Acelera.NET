@@ -1,6 +1,7 @@
 using ControlLivraria.Models;
 using LivrariaBackend.Models;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace ControlLivraria
 {
@@ -31,11 +32,25 @@ namespace ControlLivraria
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            //IMPLEMENTAR SE CAMPOS VAZIOS
-            if (txbNome.Text != String.Empty && txbLogin.Text != String.Empty && txbSenha.Text != String.Empty)
+            var url = "https://localhost:7126/api/Usuario";
+            UsuarioModel usuario = new UsuarioModel(txbNome.Text, txbLogin.Text, txbSenha.Text);
+            string payload = JsonConvert.SerializeObject(usuario);
+            var client = new HttpClient();
+            var content = new StringContent(payload, Encoding.UTF8,"application/json");
+            HttpResponseMessage response = client.PostAsync(url, content).Result;
+            if (response.IsSuccessStatusCode)
             {
-                LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
+                atualizaDGVUsuarios();
             }
+            else
+            {
+                MessageBox.Show("Erro ao consumir a API, tente novamente");
+            }
+            ////IMPLEMENTAR SE CAMPOS VAZIOS
+            //if (txbNome.Text != String.Empty && txbLogin.Text != String.Empty && txbSenha.Text != String.Empty)
+            //{
+            //    LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
+            //}
 
             //AdicionarUsuarioAPI();
             atualizaDGVUsuarios();
