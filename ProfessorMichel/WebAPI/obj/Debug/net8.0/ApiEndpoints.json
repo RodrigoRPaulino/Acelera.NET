@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "WebAPI.Controllers.ClientesController",
+    "Method": "Get",
+    "RelativePath": "api/cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ClientesController",
+    "Method": "Delete",
+    "RelativePath": "api/cliente",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

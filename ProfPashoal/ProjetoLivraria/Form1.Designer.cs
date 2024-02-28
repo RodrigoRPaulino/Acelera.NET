@@ -1,5 +1,5 @@
 ﻿
-using ControlLivraria.Domain;
+using ControlLivraria.Models;
 
 namespace ControlLivraria
 {
