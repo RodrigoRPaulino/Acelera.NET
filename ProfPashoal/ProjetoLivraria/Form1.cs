@@ -1,4 +1,6 @@
 using ControlLivraria.Models;
+using LivrariaBackend.Models;
+using Newtonsoft.Json;
 
 namespace ControlLivraria
 {
@@ -10,8 +12,9 @@ namespace ControlLivraria
         public Form1()
         {
             InitializeComponent();
-            Livros = new ListaDeLivros(); // Inicialize o objeto Livros
-            LUsuarios = new ListaDeUsuarios(); // Inicializa lista de Usuarios
+            //Livros = new ListaDeLivros(); // Inicialize o objeto Livros
+            //LUsuarios = new ListaDeUsuarios(); // Inicializa lista de Usuarios
+            UpdateUsersAPI();
 
         }
         public enum TipoCadastro
@@ -34,7 +37,7 @@ namespace ControlLivraria
                 LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
             }
 
-
+            //AdicionarUsuarioAPI();
             atualizaDGVUsuarios();
 
         }
@@ -67,13 +70,33 @@ namespace ControlLivraria
                 LUsuarios.CarregaLocal(openFileDialog1.FileName);
             }
 
-            atualizaDGVUsuarios();
+            UpdateUsersAPI();
+            //atualizaDGVUsuarios();
         }
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
         }
+        private void AdicionarUsuarioAPI()
+        {
 
+        }
+
+        private void UpdateUsersAPI()
+        {
+            //sempre definir como primeiro passo a api que vamos consumir
+            var url = "https://localhost:7126/api/Usuario";
+            HttpClient httpClient = new HttpClient();
+            var response = httpClient.GetAsync(url).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var results = response.Content.ReadAsStringAsync().Result;
+                var listaUsuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(results);
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = listaUsuarios;
+                dgvUsuarios.DataSource = bindingSource;
+            }
+        }
         private void atualizaDGVUsuarios()
         {
             BindingSource bs = new BindingSource();

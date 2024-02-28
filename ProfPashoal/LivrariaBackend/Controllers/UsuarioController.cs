@@ -18,6 +18,14 @@ namespace LivrariaBackend.Controllers
             var usuarioDB = _context.Usuarios.ToList();
             return new JsonResult(usuarioDB);
         }
+        [HttpPost]
+        public IActionResult AdicionarUsuario([FromBody]UsuarioModel usuario) 
+        {
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
+            return Ok();
+        }
+       
 
     }
 }

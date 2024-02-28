@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj": {}
+    "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj": {
+    "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
         "projectName": "LivrariaBackend",
-        "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
+        "projectPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
         "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\obj\\",
+        "outputPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",

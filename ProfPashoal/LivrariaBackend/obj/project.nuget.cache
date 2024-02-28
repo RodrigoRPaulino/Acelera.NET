@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5F5EuuaE/kWfxY43OlAcBxFvG4jViX55mT2HA3aXcAmWpIkS3YgXWQzEx3LF53d1xxPce2Siu2sh7ZdFo7CdCQ==",
+  "dgSpecHash": "vV3vlrZHFEIDBRupvBOlkPdwmzkFzzr8tjbF84aP81XIUGvGU+ysm+jvW3wRUn1HPh7kAEKeE5P0YyVZKVFAGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
+  "projectFilePath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\LivrariaBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
