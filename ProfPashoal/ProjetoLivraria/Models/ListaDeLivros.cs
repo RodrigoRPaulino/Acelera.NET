@@ -8,25 +8,25 @@ namespace ControlLivraria.Models
 {
     public class ListaDeLivros
     {
-        List<Livros> list;
+        List<Livros> book;
 
         public ListaDeLivros()
         {
-            list = new List<Livros>();
+            book = new List<Livros>();
         }
 
         public void CadastraLivro(Livros livro)
         {
-            list.Add(livro);
+            book.Add(livro);
         }
 
         public List<Livros> ListaLivros()
         {
-            return list;
+            return book;
         }
         public void SalvaLocalJSON(string arquivo)
         {
-            string json = JsonSerializer.Serialize(list);
+            string json = JsonSerializer.Serialize(book);
             File.WriteAllText(arquivo, json);
 
         }

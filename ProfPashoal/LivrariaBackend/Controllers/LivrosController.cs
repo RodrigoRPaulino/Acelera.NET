@@ -1,4 +1,5 @@
 ﻿using LivrariaBackend.DAO;
+using LivrariaBackend.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,13 @@ namespace LivrariaBackend.Controllers
         {
             var livrosDb = _context.Livros.ToList();
             return new JsonResult(livrosDb);
+        }
+        [HttpPost]
+        public IActionResult AdicionarLivro([FromBody]LivrosModel livro)
+        {
+            _context.Livros.Add(livro);
+            _context.SaveChanges();
+            return Ok();
         }
     }   
 }

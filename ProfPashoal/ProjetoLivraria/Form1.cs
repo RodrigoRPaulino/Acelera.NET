@@ -8,7 +8,7 @@ namespace ControlLivraria
     public partial class Form1 : Form
     {
         ListaDeUsuarios LUsuarios;
-        ListaDeLivros Livros;
+        ListaDeLivros book;
 
         public Form1()
         {
@@ -32,29 +32,8 @@ namespace ControlLivraria
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            var url = "https://localhost:7126/api/Usuario";
-            UsuarioModel usuario = new UsuarioModel(txbNome.Text, txbLogin.Text, txbSenha.Text);
-            string payload = JsonConvert.SerializeObject(usuario);
-            var client = new HttpClient();
-            var content = new StringContent(payload, Encoding.UTF8,"application/json");
-            HttpResponseMessage response = client.PostAsync(url, content).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                atualizaDGVUsuarios();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao consumir a API, tente novamente");
-            }
-            ////IMPLEMENTAR SE CAMPOS VAZIOS
-            //if (txbNome.Text != String.Empty && txbLogin.Text != String.Empty && txbSenha.Text != String.Empty)
-            //{
-            //    LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
-            //}
-
-            //AdicionarUsuarioAPI();
+            AdicionarUsuarioAPI();
             atualizaDGVUsuarios();
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -92,9 +71,26 @@ namespace ControlLivraria
         {
             
         }
+       
+        /// <summary>
+        /// Método responsavel pela adição de usuarios no banco de dados
+        /// </summary>
         private void AdicionarUsuarioAPI()
         {
-
+            var url = "https://localhost:7126/api/Usuario";
+            UsuarioModel usuario = new UsuarioModel(txbNome.Text, txbLogin.Text, txbSenha.Text);
+            string payload = JsonConvert.SerializeObject(usuario);
+            var client = new HttpClient();
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PostAsync(url, content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                atualizaDGVUsuarios();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao consumir a API, tente novamente");
+            }
         }
 
         private void UpdateUsersAPI()
@@ -120,56 +116,24 @@ namespace ControlLivraria
         }
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+        
         private void btn_AddLivro_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(txb_Livro.Text) ||
-                    string.IsNullOrWhiteSpace(txb_Pgs.Text) ||
-                    string.IsNullOrWhiteSpace(txb_Cod.Text) ||
-                    string.IsNullOrWhiteSpace(txb_Valor.Text))
-                {
-                    MessageBox.Show("Preencher todos os campos", "Campos Vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Verifica se os campos numéricos podem ser convertidos com sucesso
-                int paginas;
-                double codigo;
-                decimal valor;
-
-                if (!int.TryParse(txb_Pgs.Text, out paginas) ||
-                    !double.TryParse(txb_Cod.Text, out codigo) ||
-                    !decimal.TryParse(txb_Valor.Text, out valor))
-                {
-                    MessageBox.Show("Por favor, insira valores numéricos válidos para páginas, código e valor.", "Erro de Conversão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                Livros livro = new Livros(txb_Livro.Text, paginas, codigo, valor);
-                Livros.CadastraLivro(livro);
-
-                MessageBox.Show("Livro(S) cadastrado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Atualiza a lista de livros após o cadastro bem-sucedido
-                AtualizarListaDeLivros();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ocorreu um erro ao cadastrar o livro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            AdicionarLivroAPI();
+            AtualizarListaDeLivros();
         }
 
+      
         private void AtualizarListaDeLivros()
         {
             BindingSource bs = new BindingSource();
-            bs.DataSource = Livros.ListaLivros();
+            bs.DataSource = book.ListaLivros();
             Dgv_ListaLivros.DataSource = bs;
         }
 
         private void Dgv_ListaLivros_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            AtualizarListaDeLivros();
         }
 
         private void btn_ExportarArquivo_Click_1(object sender, EventArgs e)
@@ -185,7 +149,7 @@ namespace ControlLivraria
             {
                 nomeArquivo = saveFileDialog1.FileName;
 
-                Livros.SalvaLocalJSON(nomeArquivo);
+                book.SalvaLocalJSON(nomeArquivo);
             }
             MessageBox.Show("Usuário(S) exportado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -220,7 +184,7 @@ namespace ControlLivraria
 
                         case TipoCadastro.Livro:
                             writer.WriteLine("Livro,Paginas,Codigo,Valor");
-                            foreach (var livro in Livros.ListaLivros())
+                            foreach (var livro in book.ListaLivros())
                             {
                                 writer.WriteLine($"{livro.Livro},{livro.Paginas},{livro.Codigo},{livro.Valor}");
                             }
@@ -247,7 +211,70 @@ namespace ControlLivraria
         {
 
         }
+        /// <summary>
+        /// Método responsavel pela adição de livros no banco de dados
+        /// </summary>
+        private void AdicionarLivroAPI()
+        {
+            //passando o endpoint
+            var url = "https://localhost:7126/api/Livros";
+            //instanciando a model e capturando os valores do form
+            LivrosModel livro = new LivrosModel(int.Parse(txb_Cod.Text),txb_Livro.Text,txb_Pgs.Text,int.Parse(txb_Valor.Text));
+            string payload = JsonConvert.SerializeObject(livro);
+            var client = new HttpClient();
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PostAsync(url, content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                AtualizarListaDeLivros();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao consumir a API, tente novamente");
+            }
+        }
+        /// <summary>
+        /// método responsavel pela adição de livros em lista
+        /// </summary>
+        private void AdicionarLivro()
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txb_Livro.Text) ||
+                    string.IsNullOrWhiteSpace(txb_Pgs.Text) ||
+                    string.IsNullOrWhiteSpace(txb_Cod.Text) ||
+                    string.IsNullOrWhiteSpace(txb_Valor.Text))
+                {
+                    MessageBox.Show("Preencher todos os campos", "Campos Vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                // Verifica se os campos numéricos podem ser convertidos com sucesso
+                int paginas;
+                double codigo;
+                decimal valor;
+
+                if (!int.TryParse(txb_Pgs.Text, out paginas) ||
+                    !double.TryParse(txb_Cod.Text, out codigo) ||
+                    !decimal.TryParse(txb_Valor.Text, out valor))
+                {
+                    MessageBox.Show("Por favor, insira valores numéricos válidos para páginas, código e valor.", "Erro de Conversão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                Livros livro = new Livros(txb_Livro.Text, paginas, codigo, valor);
+                book.CadastraLivro(livro);
+
+                MessageBox.Show("Livro(S) cadastrado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Atualiza a lista de livros após o cadastro bem-sucedido
+                AtualizarListaDeLivros();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro ao cadastrar o livro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void btn_ExportJSON_Click(object sender, EventArgs e)
         {
             ExportarJSON(TipoCadastro.Livro);
