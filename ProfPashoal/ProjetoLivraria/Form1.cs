@@ -13,10 +13,9 @@ namespace ControlLivraria
         public Form1()
         {
             InitializeComponent();
-            //Livros = new ListaDeLivros(); // Inicialize o objeto Livros
-            //LUsuarios = new ListaDeUsuarios(); // Inicializa lista de Usuarios
+            
             UpdateUsersAPI();
-
+            AtualizarListaDeLivrosAPI();
         }
         public enum TipoCadastro
         {
@@ -106,6 +105,24 @@ namespace ControlLivraria
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = listaUsuarios;
                 dgvUsuarios.DataSource = bindingSource;
+            }
+        }
+        /// <summary>
+        /// método que traz a lista de livros do banco de dados.
+        /// </summary>
+        private void AtualizarListaDeLivrosAPI()
+        {
+            //sempre definir como primeiro passo a api que vamos consumir
+            var url = "https://localhost:7126/api/Livros";
+            HttpClient httpClient = new HttpClient();
+            var response = httpClient.GetAsync(url).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var results = response.Content.ReadAsStringAsync().Result;
+                var listaLivros = JsonConvert.DeserializeObject<List<LivrosModel>>(results);
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = listaLivros;
+               Dgv_ListaLivros.DataSource = bindingSource;
             }
         }
         private void atualizaDGVUsuarios()
