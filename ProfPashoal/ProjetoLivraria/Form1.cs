@@ -109,7 +109,7 @@ namespace ControlLivraria
         }
         /// <summary>
         /// método que traz a lista de livros do banco de dados.
-        /// </summary>
+        /// </summary> 
         private void AtualizarListaDeLivrosAPI()
         {
             //sempre definir como primeiro passo a api que vamos consumir
@@ -137,7 +137,7 @@ namespace ControlLivraria
         private void btn_AddLivro_Click(object sender, EventArgs e)
         {
             AdicionarLivroAPI();
-            AtualizarListaDeLivros();
+            AtualizarListaDeLivrosAPI();
         }
 
       
@@ -243,7 +243,7 @@ namespace ControlLivraria
             HttpResponseMessage response = client.PostAsync(url, content).Result;
             if (response.IsSuccessStatusCode)
             {
-                AtualizarListaDeLivros();
+                AtualizarListaDeLivrosAPI();
             }
             else
             {
