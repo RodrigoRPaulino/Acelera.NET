@@ -3,37 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\services\\emprestimoservicescs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\services\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\repository\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\models\\emprestimomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\models\\livrosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\services\\livroservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\projetolivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\projetolivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\projetolivraria\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C5D464-2611-42EC-B8B3-E024C35E5645}|ControlLivraria.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\dao\\livrariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62567E03-D657-4850-B4E9-39400BE216A4}|..\\LivrariaBackend\\LivrariaBackend.csproj|c:\\users\\rodri\\source\\repos\\acelera.net\\acelera.net\\acelera.net\\profpashoal\\livrariabackend\\models\\livrosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,20 +45,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Repository\\LivroRepository.cs",
+              "RelativeDocumentMoniker": "..\\LivrariaBackend\\Repository\\LivroRepository.cs",
+              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Repository\\LivroRepository.cs",
+              "RelativeToolTip": "..\\LivrariaBackend\\Repository\\LivroRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T00:13:21.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmprestimoServicescs.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\EmprestimoServicescs.cs",
-              "RelativeDocumentMoniker": "..\\LivrariaBackend\\Services\\EmprestimoServicescs.cs",
-              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\EmprestimoServicescs.cs",
-              "RelativeToolTip": "..\\LivrariaBackend\\Services\\EmprestimoServicescs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Title": "EmprestimoService.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\EmprestimoService.cs",
+              "RelativeDocumentMoniker": "..\\LivrariaBackend\\Services\\EmprestimoService.cs",
+              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\EmprestimoService.cs",
+              "RelativeToolTip": "..\\LivrariaBackend\\Services\\EmprestimoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-02T00:04:56.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsuarioModel.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Models\\UsuarioModel.cs",
               "RelativeDocumentMoniker": "..\\LivrariaBackend\\Models\\UsuarioModel.cs",
@@ -81,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LivrosModel.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Models\\LivrosModel.cs",
               "RelativeDocumentMoniker": "..\\LivrariaBackend\\Models\\LivrosModel.cs",
@@ -89,51 +92,37 @@
               "RelativeToolTip": "..\\LivrariaBackend\\Models\\LivrosModel.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAgwBcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T23:58:41.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-01T23:58:41.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LivroServices.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\LivroServices.cs",
               "RelativeDocumentMoniker": "..\\LivrariaBackend\\Services\\LivroServices.cs",
               "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Services\\LivroServices.cs",
               "RelativeToolTip": "..\\LivrariaBackend\\Services\\LivroServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T23:50:55.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAADoCAAAAAAAAAADwv0kCAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T22:10:57.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAIBAAAAAAAAAAAcwEQBAAALAAAA",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAAwEQBAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T22:04:09.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\ProjetoLivraria\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -142,45 +131,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T22:03:28.849Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmprestimoController.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Controllers\\EmprestimoController.cs",
-              "RelativeDocumentMoniker": "..\\LivrariaBackend\\Controllers\\EmprestimoController.cs",
-              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Controllers\\EmprestimoController.cs",
-              "RelativeToolTip": "..\\LivrariaBackend\\Controllers\\EmprestimoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T22:02:27.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmprestimoModel.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Models\\EmprestimoModel.cs",
-              "RelativeDocumentMoniker": "..\\LivrariaBackend\\Models\\EmprestimoModel.cs",
-              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\Models\\EmprestimoModel.cs",
-              "RelativeToolTip": "..\\LivrariaBackend\\Models\\EmprestimoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T21:29:39.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LivrariaContext.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\DAO\\LivrariaContext.cs",
-              "RelativeDocumentMoniker": "..\\LivrariaBackend\\DAO\\LivrariaContext.cs",
-              "ToolTip": "C:\\Users\\rodri\\source\\repos\\Acelera.Net\\Acelera.Net\\Acelera.Net\\ProfPashoal\\LivrariaBackend\\DAO\\LivrariaContext.cs",
-              "RelativeToolTip": "..\\LivrariaBackend\\DAO\\LivrariaContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAACBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T21:25:48.354Z",
-              "EditorCaption": ""
             }
           ]
         },
