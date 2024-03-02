@@ -74,13 +74,13 @@ namespace ControlLivraria
             groupBox4 = new GroupBox();
             dataGridView1 = new DataGridView();
             groupBox3 = new GroupBox();
-            comboBox2 = new ComboBox();
+            Cb_Livros = new ComboBox();
             label4 = new Label();
-            comboBox1 = new ComboBox();
+            Cb_Usuarios = new ComboBox();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
-            button7 = new Button();
+            Btn_AddEmprestimo = new Button();
             label6 = new Label();
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
@@ -546,13 +546,13 @@ namespace ControlLivraria
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(comboBox2);
+            groupBox3.Controls.Add(Cb_Livros);
             groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(comboBox1);
+            groupBox3.Controls.Add(Cb_Usuarios);
             groupBox3.Controls.Add(button4);
             groupBox3.Controls.Add(button5);
             groupBox3.Controls.Add(button6);
-            groupBox3.Controls.Add(button7);
+            groupBox3.Controls.Add(Btn_AddEmprestimo);
             groupBox3.Controls.Add(label6);
             groupBox3.Location = new Point(3, 6);
             groupBox3.Name = "groupBox3";
@@ -560,13 +560,13 @@ namespace ControlLivraria
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             // 
-            // comboBox2
+            // Cb_Livros
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(63, 48);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(232, 23);
-            comboBox2.TabIndex = 12;
+            Cb_Livros.FormattingEnabled = true;
+            Cb_Livros.Location = new Point(63, 48);
+            Cb_Livros.Name = "Cb_Livros";
+            Cb_Livros.Size = new Size(232, 23);
+            Cb_Livros.TabIndex = 12;
             // 
             // label4
             // 
@@ -577,13 +577,14 @@ namespace ControlLivraria
             label4.TabIndex = 11;
             label4.Text = "Livros";
             // 
-            // comboBox1
+            // Cb_Usuarios
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(63, 19);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(232, 23);
-            comboBox1.TabIndex = 10;
+            Cb_Usuarios.FormattingEnabled = true;
+            Cb_Usuarios.Location = new Point(63, 19);
+            Cb_Usuarios.Name = "Cb_Usuarios";
+            Cb_Usuarios.Size = new Size(232, 23);
+            Cb_Usuarios.TabIndex = 10;
+            Cb_Usuarios.SelectedIndexChanged += Cb_Usuarios_SelectedIndexChanged;
             // 
             // button4
             // 
@@ -621,17 +622,17 @@ namespace ControlLivraria
             button6.TextImageRelation = TextImageRelation.ImageAboveText;
             button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // Btn_AddEmprestimo
             // 
-            button7.AutoSize = true;
-            button7.Image = Properties.Resources.transfer_s32px;
-            button7.Location = new Point(306, 19);
-            button7.Name = "button7";
-            button7.Size = new Size(83, 62);
-            button7.TabIndex = 6;
-            button7.Text = "Adicionar";
-            button7.TextImageRelation = TextImageRelation.ImageAboveText;
-            button7.UseVisualStyleBackColor = true;
+            Btn_AddEmprestimo.AutoSize = true;
+            Btn_AddEmprestimo.Image = Properties.Resources.transfer_s32px;
+            Btn_AddEmprestimo.Location = new Point(306, 19);
+            Btn_AddEmprestimo.Name = "Btn_AddEmprestimo";
+            Btn_AddEmprestimo.Size = new Size(83, 62);
+            Btn_AddEmprestimo.TabIndex = 6;
+            Btn_AddEmprestimo.Text = "Adicionar";
+            Btn_AddEmprestimo.TextImageRelation = TextImageRelation.ImageAboveText;
+            Btn_AddEmprestimo.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -704,11 +705,11 @@ namespace ControlLivraria
         private SaveFileDialog saveFileDialog1;
         private OpenFileDialog openFileDialog1;
         private GroupBox groupBox3;
-        private ComboBox comboBox1;
+        private ComboBox Cb_Usuarios;
         private Button button4;
         private Button button5;
         private Button button6;
-        private Button button7;
+        private Button Btn_AddEmprestimo;
         private Label label6;
         private GroupBox groupBox6;
         private Label label9;
@@ -725,7 +726,7 @@ namespace ControlLivraria
         private DataGridView Dgv_ListaLivros;
         private GroupBox groupBox4;
         private DataGridView dataGridView1;
-        private ComboBox comboBox2;
+        private ComboBox Cb_Livros;
         private Label label4;
         private TextBox txb_Pgs;
         private TextBox txb_Valor;

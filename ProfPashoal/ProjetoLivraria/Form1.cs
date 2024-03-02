@@ -13,7 +13,7 @@ namespace ControlLivraria
         public Form1()
         {
             InitializeComponent();
-            
+
             UpdateUsersAPI();
             AtualizarListaDeLivrosAPI();
         }
@@ -53,7 +53,6 @@ namespace ControlLivraria
                 LUsuarios.SalvaLocalJSON(nomeArquivo);
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -68,62 +67,7 @@ namespace ControlLivraria
         }
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-        }
-       
-        /// <summary>
-        /// Método responsavel pela adição de usuarios no banco de dados
-        /// </summary>
-        private void AdicionarUsuarioAPI()
-        {
-            var url = "https://localhost:7126/api/Usuario";
-            UsuarioModel usuario = new UsuarioModel(txbNome.Text, txbLogin.Text, txbSenha.Text);
-            string payload = JsonConvert.SerializeObject(usuario);
-            var client = new HttpClient();
-            var content = new StringContent(payload, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = client.PostAsync(url, content).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                atualizaDGVUsuarios();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao consumir a API, tente novamente");
-            }
-        }
 
-        private void UpdateUsersAPI()
-        {
-            //sempre definir como primeiro passo a api que vamos consumir
-            var url = "https://localhost:7126/api/Usuario";
-            HttpClient httpClient = new HttpClient();
-            var response = httpClient.GetAsync(url).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                var results = response.Content.ReadAsStringAsync().Result;
-                var listaUsuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(results);
-                BindingSource bindingSource = new BindingSource();
-                bindingSource.DataSource = listaUsuarios;
-                dgvUsuarios.DataSource = bindingSource;
-            }
-        }
-        /// <summary>
-        /// método que traz a lista de livros do banco de dados.
-        /// </summary> 
-        private void AtualizarListaDeLivrosAPI()
-        {
-            //sempre definir como primeiro passo a api que vamos consumir
-            var url = "https://localhost:7126/api/Livros";
-            HttpClient httpClient = new HttpClient();
-            var response = httpClient.GetAsync(url).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                var results = response.Content.ReadAsStringAsync().Result;
-                var listaLivros = JsonConvert.DeserializeObject<List<LivrosModel>>(results);
-                BindingSource bindingSource = new BindingSource();
-                bindingSource.DataSource = listaLivros;
-               Dgv_ListaLivros.DataSource = bindingSource;
-            }
         }
         private void atualizaDGVUsuarios()
         {
@@ -133,31 +77,25 @@ namespace ControlLivraria
         }
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        
         private void btn_AddLivro_Click(object sender, EventArgs e)
         {
             AdicionarLivroAPI();
             AtualizarListaDeLivrosAPI();
         }
-
-      
         private void AtualizarListaDeLivros()
         {
             BindingSource bs = new BindingSource();
             bs.DataSource = book.ListaLivros();
             Dgv_ListaLivros.DataSource = bs;
         }
-
         private void Dgv_ListaLivros_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             AtualizarListaDeLivros();
         }
-
         private void btn_ExportarArquivo_Click_1(object sender, EventArgs e)
         {
             ExportarCsv(TipoCadastro.Livro);
         }
-
         public void ExportarJSON(TipoCadastro tipoDado)
         {
             saveFileDialog1.Filter = "Arquivo .JSON (.json) | *.json";
@@ -171,7 +109,6 @@ namespace ControlLivraria
             MessageBox.Show("Usuário(S) exportado(S) com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
-
         /// <summary>
         /// Método dinamico para exportação de arquivos csv
         /// passado por um Enum
@@ -217,38 +154,13 @@ namespace ControlLivraria
                 }
             }
         }
-
-
         private void txb_Pgs_TextChanged_1(object sender, EventArgs e)
         {
 
         }
-
         private void txb_Valor_TextChanged(object sender, EventArgs e)
         {
 
-        }
-        /// <summary>
-        /// Método responsavel pela adição de livros no banco de dados
-        /// </summary>
-        private void AdicionarLivroAPI()
-        {
-            //passando o endpoint
-            var url = "https://localhost:7126/api/Livros";
-            //instanciando a model e capturando os valores do form
-            LivrosModel livro = new LivrosModel(int.Parse(txb_Cod.Text),txb_Livro.Text,txb_Pgs.Text,int.Parse(txb_Valor.Text));
-            string payload = JsonConvert.SerializeObject(livro);
-            var client = new HttpClient();
-            var content = new StringContent(payload, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = client.PostAsync(url, content).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                AtualizarListaDeLivrosAPI();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao consumir a API, tente novamente");
-            }
         }
         /// <summary>
         /// método responsavel pela adição de livros em lista
@@ -296,6 +208,10 @@ namespace ControlLivraria
         {
             ExportarJSON(TipoCadastro.Livro);
         }
+
+
+        //===========================              ATIVIDADES PASSADAS PELO PROFESSOR PASCHOAL          =================================
+
         /// <summary>
         /// Método responsavel pela pesquisa de um usuario consultando um arquivo CSV
         /// </summary>
@@ -305,7 +221,7 @@ namespace ControlLivraria
             var arquivoNome = @"C:\Users\rodri\source\repos\Acelera.Net\Usuarios.csv";
 
             // atua como um intermediario entre uma fonte de dados
-            BindingSource bindingSource = new BindingSource(); 
+            BindingSource bindingSource = new BindingSource();
 
             string pesquisa = Tb_Pesquisar.Text;
             LUsuarios.CarregaLocal(arquivoNome);
@@ -319,10 +235,94 @@ namespace ControlLivraria
             dgvUsuarios.DataSource = bindingSource;
         }
 
+        /// <summary>
+        /// Método responsavel pela adição de usuarios no banco de dados
+        /// </summary>
+        private void AdicionarUsuarioAPI()
+        {
+            var url = "https://localhost:7126/api/Usuario";
+            UsuarioModel usuario = new UsuarioModel(txbNome.Text, txbLogin.Text, txbSenha.Text);
+            string payload = JsonConvert.SerializeObject(usuario);
+            var client = new HttpClient();
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PostAsync(url, content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                atualizaDGVUsuarios();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao consumir a API, tente novamente");
+            }
+        }
+
+        private void UpdateUsersAPI()
+        {
+            //sempre definir como primeiro passo a api que vamos consumir
+            var url = "https://localhost:7126/api/Usuario";
+            HttpClient httpClient = new HttpClient();
+            var response = httpClient.GetAsync(url).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var results = response.Content.ReadAsStringAsync().Result;
+                var listaUsuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(results);
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = listaUsuarios;
+                dgvUsuarios.DataSource = bindingSource;
+            }
+        }
+
+        /// <summary>
+        /// Método responsavel pela adição de livros no banco de dados
+        /// </summary>
+        private void AdicionarLivroAPI()
+        {
+            //passando o endpoint
+            var url = "https://localhost:7126/api/Livros";
+            //instanciando a model e capturando os valores do form
+            LivrosModel livro = new LivrosModel(int.Parse(txb_Cod.Text), txb_Livro.Text, txb_Pgs.Text, int.Parse(txb_Valor.Text));
+            string payload = JsonConvert.SerializeObject(livro);
+            var client = new HttpClient();
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PostAsync(url, content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                AtualizarListaDeLivrosAPI();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao consumir a API, tente novamente");
+            }
+        }
+
+        /// <summary>
+        /// método que traz a lista de livros do banco de dados.
+        /// </summary> 
+        private void AtualizarListaDeLivrosAPI()
+        {
+            //sempre definir como primeiro passo a api que vamos consumir
+            var url = "https://localhost:7126/api/Livros";
+            HttpClient httpClient = new HttpClient();
+            var response = httpClient.GetAsync(url).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var results = response.Content.ReadAsStringAsync().Result;
+                var listaLivros = JsonConvert.DeserializeObject<List<LivrosModel>>(results);
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = listaLivros;
+                Dgv_ListaLivros.DataSource = bindingSource;
+            }
+        }
+
         private void Btn_Pesquisar_Click(object sender, EventArgs e)
         {
             PesquisarUsuario();
 
+        }
+
+        private void Cb_Usuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
